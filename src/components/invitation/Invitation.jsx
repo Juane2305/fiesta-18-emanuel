@@ -6,17 +6,47 @@ import DressCode from "../dressCode/DressCode";
 import Hero from "../hero/Hero";
 import Places from "../places/Places";
 import cancion from "../../assets/cancion.MP3";
-import MusicPlayer from "../music/MusicPlayer";
 import Footer from "../footer/Footer";
 import Phrase from "../phrase/Phrase";
+import { CiLocationOn, CiClock2 } from "react-icons/ci";
+import { IoTodayOutline } from "react-icons/io5";
+import MusicScreen from "../MusicScreen";
 
 const Invitation = () => {
   return (
     <div className="overflow-hidden ">
       <div className="absolute right-25 z-50">
-        <MusicPlayer cancion={cancion} />
+        <MusicScreen cancion={cancion} />
       </div>
       <Hero />
+      <Phrase />
+      <div className=" border-y py-20 border-y-gray-900 font-serif">
+        <h2 className="text-3xl md:text-5xl font-normal  text-center text-gray-700 mb-10">
+          Te espero para festejar mi cumple
+        </h2>
+        <div className="w-full">
+          <p
+            className="text-gray-700 text-lg pt-3 flex items-center justify-center gap-2 italic"
+            data-aos="fade-in"
+          >
+            <IoTodayOutline className="text-2xl" />8 de Noviembre de 2025
+          </p>
+          <p
+            className="text-gray-700 text-lg pt-3 flex items-center justify-center gap-2 italic"
+            data-aos="fade-in"
+          >
+            <CiClock2 className="text-2xl" />
+            21:00 hs
+          </p>
+          <p
+            className="text-gray-700 text-lg flex items-center justify-center gap-2 italic pt-3"
+            data-aos="fade-in"
+          >
+            <CiLocationOn className="text-2xl" />
+            Luna Eventos Mendoza
+          </p>
+        </div>
+      </div>
       <Countdown
         targetDate={new Date("2025-11-08T21:00:00-03:00")}
         containerClasses={
@@ -66,7 +96,6 @@ bg-[radial-gradient(70%_70%_at_50%_30%,#0d3b8e_0%,#071a3a_60%,#050d20_100%)] ove
         borderModal="border-golden"
         textColor="text-primary"
       />
-      <Phrase />
       <Confirmation
         clase="py-10 bg-gray-100 text-gray-700 font-serif"
         claseButton="border-2 py-3 px-6 rounded-full text-gray-800 font-semibold border-golden bg-white hover:text-gray:800 cursor-pointer"

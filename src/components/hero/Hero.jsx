@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { CiLocationOn } from "react-icons/ci";
-import { IoTodayOutline } from "react-icons/io5";
+
 
 
 const Hero = () => {
@@ -31,25 +30,15 @@ const Hero = () => {
     blur-2xl opacity-60"
         ></div>
 
-        <div data-aos="fade-in" className="z-10 flex flex-col gap-y-4">
-          <p className="text-white text-xl uppercase font-bold">Estás invitado a la</p>
+        <div data-aos="fade-in" className="z-10 relative gap-y-4">
+          <p className="absolute -top-42 md:-top-56 left-1/2 transform -translate-x-1/2 text-[14rem] md:text-[20rem] text-white opacity-50">18</p>
           <h1
-            className="text-6xl md:text-8xl font-extrabold text-[#dce5f0] 
+            className="text-6xl md:text-9xl mt-10 font-extrabold text-[#dce5f0] 
     drop-shadow-[0_0_12px_rgba(80,170,255,0.8)]
-    [text-shadow:0_0_10px_#3ba3ff,0_0_20px_#3ba3ff,0_0_40px_#3ba3ff]"
+    [text-shadow:0_0_10px_#3ba3ff,0_0_20px_#3ba3ff,0_0_40px_#3ba3ff] ml-6" data-aos="fade-in" data-aos-delay="200"
           >
-            MAXI FEST
+            EMANUEL
           </h1>
-        </div>
-        <div className="absolute bottom-30 left-1/2 w-full transform -translate-x-1/2">
-            <p className="text-white text-lg flex items-center justify-center gap-2 italic" data-aos="fade-in">
-              <CiLocationOn className="text-2xl" />
-              Luna Eventos Mendoza
-            </p>
-          <p className="text-white text-lg pt-3 flex items-center justify-center gap-2 italic" data-aos="fade-in">
-            <IoTodayOutline className="text-2xl"/>
-            8 de Noviembre de 2025
-          </p>
         </div>
       </div>
     </>
