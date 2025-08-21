@@ -29,7 +29,7 @@ const Places = () => {
             Luna Eventos Mendoza
             <br />
             Daremos inicio a la fiesta a las{" "}
-            <span className="font-semibold">21:00hs</span>.
+            <span className="font-semibold">00:00 hs</span>.
           </p>
         </div>
         <a

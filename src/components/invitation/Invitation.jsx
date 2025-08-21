@@ -36,7 +36,7 @@ const Invitation = () => {
             data-aos="fade-in"
           >
             <CiClock2 className="text-2xl" />
-            21:00 hs
+            24:00 hs
           </p>
           <p
             className="text-gray-700 text-lg flex items-center justify-center gap-2 italic pt-3"
@@ -48,7 +48,7 @@ const Invitation = () => {
         </div>
       </div>
       <Countdown
-        targetDate={new Date("2025-11-08T21:00:00-03:00")}
+        targetDate={new Date("2025-11-09T00:00:00-03:00")}
         containerClasses={
           "w-full flex flex-col justify-center items-center gap-y-5 bg-primary py-10 font-serif font-light"
         }
@@ -74,7 +74,7 @@ bg-[radial-gradient(70%_70%_at_50%_30%,#0d3b8e_0%,#071a3a_60%,#050d20_100%)] ove
         <div className="bg-primary text-center text-white relative">
           <GoogleCalendarButton
             titleCalendar="Maxi Fest"
-            fechaComienzo="20251108T210000"
+            fechaComienzo="20251108T235000"
             fechaFin="20251109T050000"
             salon="Luna Eventos Mendoza"
             imgClass="text-white"
@@ -82,24 +82,10 @@ bg-[radial-gradient(70%_70%_at_50%_30%,#0d3b8e_0%,#071a3a_60%,#050d20_100%)] ove
           />
         </div>
       </div>
-      <DressCode />
-      <DatosBancarios
-        texto="Si deseás hacerme un regalo, te dejo mis datos"
-        claseContenedor="text-white font-serif"
-        claseBoton="border-2 py-3 px-6 rounded-full text-gray-800 font-semibold border-golden bg-white hover:text-gray:800 cursor-pointer  py-4 px-6 mt-5 transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-lg"
-        textSize="text-lg"
-        alias="maxi.cortes12"
-        banco="Mercado Pago"
-        nombre="Cortes Copacaba Máximo Emanuel"
-        claseBotonModal="bg-blue-900 border-primary"
-        claseModal="bg-primary"
-        borderModal="border-golden"
-        textColor="text-primary"
-      />
       <Confirmation
         clase="py-10 bg-gray-100 text-gray-700 font-serif"
         claseButton="border-2 py-3 px-6 rounded-full text-gray-800 font-semibold border-golden bg-white hover:text-gray:800 cursor-pointer"
-        linkAsistencia="https://docs.google.com/forms/d/e/1FAIpQLSeSccywt63J4zZg7b4L0EkdDWOmkhLF9BhHdsA2oR92WlDEgg/viewform?usp=dialog"
+        linkAsistencia="https://docs.google.com/forms/d/e/1FAIpQLSeKDd3ScRQb4K-23gSzLIMvGZNUS-ribsm8URz70D0lllmysg/viewform?usp=dialog"
       />
 
       <Footer />
