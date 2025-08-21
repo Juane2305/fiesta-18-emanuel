@@ -27,8 +27,7 @@ const Places = () => {
           </h2>
           <p className="text-base sm:text-lg text-gray-200 font-semibold leading-relaxed text-center">
             Luna Eventos Mendoza <br />
-            Carlos
-            Calle Washington Lencinas 505
+            Carlos Washington Lencinas 505, Mendoza
             <br />
             Daremos inicio a la fiesta a las{" "}
             <span className="font-semibold">00:00 hs</span>.
